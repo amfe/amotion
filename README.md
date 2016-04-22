@@ -3,7 +3,7 @@
 ![npm version](http://img.shields.io/npm/v/amotion.svg)
 ![ci status](https://api.travis-ci.org/amfe/amotion.svg?branch=master)
 
-project description
+A physical mathematical motion functions for javascript
 
 ## [Visiting Site](http://amfe.github.io/amotion/)
 
