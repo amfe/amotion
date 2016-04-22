@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<script src="bundle.js"></script>
+</head>
+<body>
+<script>
+var Motion = require('amotion').default;
+var abc = new Motion({v : 1.5,
+        a : -0.0015,
+        t : 900}).generateCubicBezier();
+</script>
+</body>
+</html>

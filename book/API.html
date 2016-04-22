@@ -1,0 +1,234 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>The API | amotion</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="./CHANGELOG.html" />
+    
+    
+    <link rel="prev" href="./QuickStart.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="2"
+        data-chapter-title="The API"
+        data-filepath="API.md"
+        data-basepath="."
+        data-revision="Fri Apr 22 2016 13:42:11 GMT+0800 (CST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Overview
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="QuickStart.html">
+            
+                
+                    <a href="./QuickStart.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Getting Started
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="2" data-path="API.html">
+            
+                
+                    <a href="./API.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        The API
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="CHANGELOG.html">
+            
+                
+                    <a href="./CHANGELOG.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        Change Logs
+                    </a>
+            
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >amotion</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="the-api">The API</h1>
+<pre><code class="lang-javascript"><span class="hljs-keyword">import</span> Module <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;amotion&apos;</span>;
+</code></pre>
+<h2 id="constrcutor">Constrcutor</h2>
+<h3 id="new-classv">new Class(v)</h3>
+<p>create a object</p>
+<pre><code class="lang-jsdoc">&#x901A;&#x8FC7;&#x5DF2;&#x77E5;&#x7684;&#x8FD0;&#x52A8;&#x53C2;&#x6570;&#xFF0C;&#x63A8;&#x5BFC;&#x51FA;&#x5176;&#x5B83;&#x7684;&#x4F4D;&#x7F6E;&#x53C2;&#x6570;
+&#x57FA;&#x4E8E;&#x725B;&#x987F;&#x7B2C;&#x4E8C;&#x5B9A;&#x5F8B;&#xFF1A;s = vt + at^2/2
+@class lib.motion~Motion
+@param {Object} config &#x5F62;&#x5982;{v, a, s, t}&#xFF0C;&#x5176;&#x4E2D;t&#x548C;s&#x6700;&#x5C11;&#x77E5;&#x5176;&#x4E00;&#xFF0C;&#x5373;&#x53EF;&#x63A8;&#x5BFC;&#x51FA;&#x53E6;&#x4E00;&#x4E2A;
+@param {Number} config.v &#x5DF2;&#x77E5;&#x521D;&#x901F;&#x5EA6;
+@param {Number} config.a &#x5DF2;&#x77E5;&#x52A0;&#x901F;&#x5EA6;
+@param {Number} config.s &#x4F4D;&#x79FB;
+@param {Number} config.t &#x65F6;&#x95F4;
+</code></pre>
+<h2 id="methods">Methods</h2>
+<h2 id="generatecubicbezier">generateCubicBezier()</h2>
+<p>return a CubicBezier</p>
+<pre><code class="lang-jsdoc">&#x6839;&#x636E;&#x8FD0;&#x52A8;&#x53C2;&#x6570;&#x63A8;&#x5BFC;&#x51FA;&#x4E09;&#x7EF4;&#x8D1D;&#x585E;&#x5C14;&#x53C2;&#x6570;
+@method generateCubicBezier
+@instance
+@memberOf lib.motion~Motion
+@return {Array} 4&#x4E2A;&#x4E09;&#x6B21;&#x8D1D;&#x585E;&#x5C14;&#x53C2;&#x6570;&#x7EC4;&#x6210;&#x7684;&#x6570;&#x7EC4;&#xFF0C;&#x5F62;&#x5982;[[p1x, p1y], [p2x, p2y]]
+</code></pre>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./QuickStart.html" class="navigation navigation-prev " aria-label="Previous page: Getting Started"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./CHANGELOG.html" class="navigation navigation-next " aria-label="Next page: Change Logs"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
